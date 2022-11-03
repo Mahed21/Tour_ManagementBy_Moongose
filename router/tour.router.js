@@ -6,8 +6,8 @@ router
   .get(productController.getProduct)
   .post(productController.createProduct);
 
-router.route("/cheapestTour").get(productController.getThreeCheapestTour);
-router.route("/mostViewdTour").get(productController.getThreeViewdTour);
+router.route("/cheapest").get(productController.getThreeCheapestTour);
+router.route("/trending").get(productController.getThreeViewdTour);
 
 router.route("/:id").patch(productController.updateController);
 router.route("/:id").get(productController.getProductById);
